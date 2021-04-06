@@ -92,3 +92,15 @@ For production build, run the following command:
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
+
+## Api
+
+Contains all the data fetching requests.
+
+### Functions
+
+* apicalls.js
+
+##### Parameters:None
+##### Functionality: Calls an external api GET endpoint and fetches data.
+
