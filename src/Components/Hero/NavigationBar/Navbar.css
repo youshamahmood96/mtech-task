@@ -1,0 +1,29 @@
+.navbar{
+    background-color: var(--colorOne);
+    height:100px;
+    position:fixed;
+    top:0;
+    width:100%;
+    overflow: hidden;
+    z-index:1;
+}
+.navbar ul{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    overflow:hidden;
+}
+.navbar li{
+    float:right;
+    margin:30px 20px;
+}
+.cart-icon{
+    cursor:pointer;
+    width:30px;
+    height:auto;
+}
+.navbar img{
+    position:absolute;
+    width:250px;
+    height:auto;
+}

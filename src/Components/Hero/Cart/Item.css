@@ -1,0 +1,46 @@
+.entity1{grid-area:title}
+.entity2{grid-area:image}
+.entity3{grid-area:price}
+
+.entity1 button{
+    background-color:#df4759;
+    border:none;
+    border-radius:50%;
+    padding:10px;
+    outline:none;
+    cursor:pointer;
+}
+.entity3{
+    display:flex;
+    justify-content:flex-end;
+}
+.entity3 input{
+    height:30px;
+    width:50px;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.grid-container{
+    border:1px solid black;
+    margin:20px 0px;
+    border-radius:10px;
+    display:grid;
+    grid-template-areas:
+    'title title title title title title'
+    'image price price price price price'
+    'image price price price price price';
+    grid-gap:10px;
+    padding:10px;
+}
+.grid-container img{
+    width:50px;
+    height:auto; 
+}
+.grid-container h6{
+    text-align:left;
+    margin:0px;
+}
+.grid-container p{
+    text-align:center;
+}
