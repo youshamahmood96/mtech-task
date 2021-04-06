@@ -25,7 +25,7 @@ const Item = (props) => {
     return (
         <div className="grid-container" >
             <img className="entity2" src={image} alt=""/>
-            <h6 className="entity1" > <button onClick={handleRemoveItem} >X</button> {title}</h6>
+            <h6 className="entity1" > <button className="close-button" onClick={handleRemoveItem} >X</button> {title}</h6>
             <div className="entity3">
             <p> $ {price} X </p>
             <input type="number" min="1" name="quantity" onChange={handleChange} value={value} id="quantity"/>

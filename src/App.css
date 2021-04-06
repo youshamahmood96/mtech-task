@@ -8,3 +8,11 @@
     --black:#000000;
     --animation:all .5s ease-out;
 }
+.close-button{
+    background-color:#df4759;
+    border:none;
+    width:20px;
+    height:20px;
+    outline:none;
+    cursor:pointer;
+}

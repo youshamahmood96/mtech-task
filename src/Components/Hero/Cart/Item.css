@@ -2,14 +2,7 @@
 .entity2{grid-area:image}
 .entity3{grid-area:price}
 
-.entity1 button{
-    background-color:#df4759;
-    border:none;
-    border-radius:50%;
-    padding:10px;
-    outline:none;
-    cursor:pointer;
-}
+
 .entity3{
     display:flex;
     justify-content:flex-end;

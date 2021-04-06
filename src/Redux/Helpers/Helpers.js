@@ -26,6 +26,9 @@ export const GetTotalLength = () =>{
 export const GetModalState = ()=>{
     return useSelector(state=>state?state.modalReducer.modalState:false)
 }
+export const GetCheckOutModalState = ()=>{
+    return useSelector(state=>state?state.modalReducer.checkoutModalState:false)
+}
 export const SubTotalCalculator = (price,quantity) =>{
     return price*quantity.toFixed(2)
 }
