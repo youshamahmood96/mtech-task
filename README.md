@@ -35,20 +35,35 @@ Builds the app for production to the `build` folder.\
 ```
 ├── Api
 |  └── ApiCalls.js
-├── App.css       
-├── App.js        
-├── Components    
-|  ├── Hero       
-|  └── NotFound   
+├── App.css
+├── App.js
+├── Components
+|  ├── Hero
+|  |  ├── Cart
+|  |  ├── GridLayout
+|  |  ├── Hero.css
+|  |  ├── Hero.js
+|  |  └── NavigationBar
+|  └── NotFound
+|     └── NotFound.js
 ├── index.css
 ├── index.js
 ├── logo.svg
 ├── Redux
 |  ├── Actions
+|  |  ├── cartActions.js
+|  |  └── modalActions.js
 |  ├── ActionTypes
+|  |  ├── cartTypes.js
+|  |  └── modaltypes.js
 |  ├── Helpers
+|  |  └── Helpers.js
 |  ├── Reducers
+|  |  ├── cartReducer.js
+|  |  ├── modalReducer.js
+|  |  └── rootReducer.js
 |  └── Store
+|     └── store.js
 ├── reportWebVitals.js
 ├── Resources
 |  └── companyLogo.png
@@ -58,5 +73,7 @@ Builds the app for production to the `build` folder.\
 └── Tests
    ├── IntegrationTests
    ├── SnapshotTests
+   |  └── GridLayout
    └── UnitTests
+      └── NotFound.test.js
    ```
