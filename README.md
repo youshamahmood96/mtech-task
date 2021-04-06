@@ -1,3 +1,7 @@
+## Live Link
+
+The website is live  [here](https://mtech-task.netlify.app/)
+
 ## Folder Structure For src
 
 ```
