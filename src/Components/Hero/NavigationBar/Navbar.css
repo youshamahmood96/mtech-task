@@ -1,5 +1,5 @@
 .navbar{
-    background-color: var(--colorOne);
+    background-color: var(--base);
     height:100px;
     position:fixed;
     top:0;

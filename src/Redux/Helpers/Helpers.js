@@ -31,5 +31,5 @@ export const SubTotalCalculator = (price,quantity) =>{
 }
 export const TotalCalculator = () =>{
     const cart = LoadCart()
-    return cart.reduce((total,item)=>{return total+item.price*item.quantity},0)
+    return cart.reduce((total,item)=>{return total+item.price*item.quantity},0).toFixed(2)
 }

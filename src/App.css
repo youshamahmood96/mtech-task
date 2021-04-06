@@ -1,7 +1,10 @@
 :root{
-    --colorOne:#109FB2;
-    --colorTwo:#E5E5E5;
-    --colorThree:#F4F4F4;
+    --base:#871717;
+    --secondary:#E5E5E5;
+    --grid:#F4F4F4;
+    --close:#df4759;
+    --modal:#DD501D;
     --white:#FFFFFF;
     --black:#000000;
+    --animation:all .5s ease-out;
 }

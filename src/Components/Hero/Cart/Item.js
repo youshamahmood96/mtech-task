@@ -29,7 +29,7 @@ const Item = (props) => {
             <div className="entity3">
             <p> $ {price} X </p>
             <input type="number" min="1" name="quantity" onChange={handleChange} value={value} id="quantity"/>
-            <p> = $ {subTotal}</p>
+            <p style={{width:'100px'}} > &nbsp; = $ {subTotal}</p>
             </div>
             
         </div>
