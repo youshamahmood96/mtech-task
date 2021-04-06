@@ -27,11 +27,11 @@ const ItemCard = (props) => {
 };
 const AddToCart = (props) => {
     const dispatch = useDispatch()
-    const handleClick = () => {
+    const handleAddToCart = () => {
         dispatch(addToCart(props.item))
     }
     return (
-        <div onClick={handleClick} className="border-bottom item-body-interact add-to-cart" >Add to Cart</div>
+        <div onClick={handleAddToCart} className="border-bottom item-body-interact add-to-cart" >Add to Cart</div>
     )
 }
 const IncreaseOrder = (props) => {

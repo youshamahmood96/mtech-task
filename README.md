@@ -101,6 +101,94 @@ Contains all the data fetching requests.
 
 1. apicalls.js
 
-##### Parameters:None
+##### Parameters:None 
 ##### Functionality: Calls an external api GET endpoint and fetches data.
+
+## Components
+Contains all the react components used in this project
+
+##### Hero
+Main source of all the components that have been used.
+
+#### Folder Structure
+```
+├── Cart
+|  ├── Cart.css
+|  ├── Cart.js
+|  ├── CartSummary.css
+|  ├── CartSummary.js
+|  ├── Item.css
+|  └── Item.js
+├── GridLayout
+|  ├── GridLayout.css
+|  ├── GridLayout.js
+|  ├── ItemCard.css
+|  └── ItemCard.js
+├── Hero.css
+├── Hero.js
+└── NavigationBar
+   ├── Navbar.css
+   └── NavBar.js
+```
+#### GridLayout
+Display Items available at the store, interact with the products and redux calls.
+
+##### Functions
+
+1. handleAddToCart()
+###### Parameters:None 
+###### Functionality: Interact with the redux store to add an item to the cart.
+2. handleIncreaseOrder()
+###### Parameters:None 
+###### Functionality: Interact with the redux store to increase the number of items ordered.
+3. handleDecreaseOrder()
+###### Parameters:None 
+###### Functionality: Interact with the redux store to decrease the number of items ordered.
+
+##### Redux
+
+#### Folder Structure
+```
+├── Actions
+|  ├── cartActions.js 
+|  └── modalActions.js
+├── ActionTypes       
+|  ├── cartTypes.js
+|  └── modaltypes.js
+├── Helpers
+|  └── Helpers.js
+├── Reducers
+|  ├── cartReducer.js
+|  ├── modalReducer.js
+|  └── rootReducer.js
+└── Store
+   └── store.js
+```
+
+#### Helper Functions
+
+1. LoadCart()
+###### Parameters:None 
+###### Functionality: Loads the cart from store
+2. CheckItemInCart(id)
+###### Parameters: id of the intended item 
+###### Functionality: Checks the quantity of the target item
+3. GetTotalLength()
+###### Parameters:None 
+###### Functionality: Gets the total number of items from cart.
+4. GetModalState()
+###### Parameters:None 
+###### Functionality: Used to toggle modal open/close
+5. SubTotalCalculator()
+###### Parameters:price and quantity of the item 
+###### Functionality: Calculates the sub-total cost for the item
+6. TotalCalculator()
+###### Parameters: none
+###### Functionality: Calculates the sub-total cost for all the items
+
+
+
+
+
+
 
