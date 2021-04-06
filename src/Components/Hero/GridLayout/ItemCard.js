@@ -2,11 +2,13 @@ import { useDispatch } from 'react-redux';
 
 import { addToCart, decreaseOrder, increaseOrder } from '../../../Redux/Actions/cartActions';
 import { CheckItemInCart, GetModalState } from '../../../Redux/Helpers/Helpers';
+import { truncate } from '../../Helpers/helpers';
 import './ItemCard.css'
 
 const ItemCard = (props) => {
     const show = GetModalState()
     const { id, image, title, price } = props.item
+    let truncatedTitle = truncate(title)
     let quantity = CheckItemInCart(id)
     return (
         <div style={{ pointerEvents: show ? 'none' : 'auto' }} className="item-card"  >
@@ -15,7 +17,7 @@ const ItemCard = (props) => {
             </div>
             <div className="item-body border-bottom">
                 <div className="item-text">
-                    <h5>{title}</h5>
+                    <h5>{truncatedTitle} </h5>
                     <p>$ {price}</p>
                 </div>
                 {
