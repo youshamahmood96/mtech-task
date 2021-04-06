@@ -99,7 +99,7 @@ Contains all the data fetching requests.
 
 ### Functions
 
-* apicalls.js
+1. apicalls.js
 
 ##### Parameters:None
 ##### Functionality: Calls an external api GET endpoint and fetches data.
