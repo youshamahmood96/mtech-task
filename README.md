@@ -29,3 +29,31 @@ For production build, run the following command:
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
+
+### Folder Structure For src
+├── Api
+|  └── ApiCalls.js
+├── App.css       
+├── App.js        
+├── Components    
+|  ├── Hero       
+|  └── NotFound   
+├── index.css
+├── index.js
+├── logo.svg
+├── Redux
+|  ├── Actions
+|  ├── ActionTypes
+|  ├── Helpers
+|  ├── Reducers
+|  └── Store
+├── reportWebVitals.js
+├── Resources
+|  └── companyLogo.png
+├── Router
+|  └── RoutesHandler.js
+├── setupTests.js
+└── Tests
+   ├── IntegrationTests
+   ├── SnapshotTests
+   └── UnitTests
