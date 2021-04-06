@@ -9,3 +9,8 @@ export const toggleCheckoutModal = () =>{
         type: actionTypes.TOGGLE_CHECKOUT_MODAL
     }
 }
+export const closeCheckoutModal = () =>{
+    return{
+        type: actionTypes.CLOSE_CHECKOUT_MODAL
+    }
+}

@@ -1,7 +1,7 @@
 import * as actionTypes from '../ActionTypes/modaltypes'
 let initialState ={
     modalState:false,
-    checkoutModalState:false
+    checkoutModalState:true
 }
 export const modalReducer = (state=initialState,action)=>{
     switch(action.type){
@@ -13,7 +13,12 @@ export const modalReducer = (state=initialState,action)=>{
         case actionTypes.TOGGLE_CHECKOUT_MODAL:
             return{
                 ...state,
-                checkoutModalState:!state.checkoutModalState
+                checkoutModalState:true
+            }
+        case actionTypes.CLOSE_CHECKOUT_MODAL:
+            return{
+                ...state,
+                checkoutModalState:false
             }
         default:
             return state

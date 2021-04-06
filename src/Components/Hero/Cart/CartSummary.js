@@ -4,6 +4,7 @@ import './CartSummary.css'
 import { TotalCalculator } from '../../../Redux/Helpers/Helpers';
 import { useDispatch } from 'react-redux';
 import { toggleCheckoutModal } from '../../../Redux/Actions/modalActions';
+import { Link } from 'react-router-dom';
 
 const CartSummary = () => {
     let subTotal = TotalCalculator()
@@ -18,7 +19,7 @@ const CartSummary = () => {
         <p style={{textAlign:'right'}}>Delivery-Charge = 20</p>
         <hr/>
         <p style={{textAlign:'right'}}>Grand-Total = {subTotal+20}</p>
-        <button onClick={handleCheckoutModal} >Proceed to checkout</button> 
+        <Link to='/checkout'><button onClick={handleCheckoutModal} >Proceed to checkout</button> </Link>
         </div>
     );
 };

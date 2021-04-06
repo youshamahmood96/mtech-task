@@ -2,14 +2,13 @@
 import { useDispatch } from 'react-redux';
 import { clearCart } from '../../../Redux/Actions/cartActions';
 import { toggleModal } from '../../../Redux/Actions/modalActions';
-import { GetCheckOutModalState, LoadCart } from '../../../Redux/Helpers/Helpers';
+import {LoadCart } from '../../../Redux/Helpers/Helpers';
 import './Cart.css'
 import CartSummary from './CartSummary';
 import Item from './Item';
 
 const Cart = ({show}) => {
     const dispatch = useDispatch()
-    const showCheckout = GetCheckOutModalState()
     const handleModalToggle = () => {
        dispatch(toggleModal())
     }
@@ -21,7 +20,6 @@ const Cart = ({show}) => {
         <div style={{
             opacity:show?'1':0,zIndex:show?'10':'-1',
             transform:show?'translate(0vh)':'translate(100vh)',
-            pointerEvents: showCheckout ? 'none' : 'auto'
         }} 
         className="modal-wrapper">
             <div className="modal-header">
