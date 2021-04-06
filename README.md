@@ -31,6 +31,8 @@ For production build, run the following command:
 Builds the app for production to the `build` folder.\
 
 ### Folder Structure For src
+
+```
 ├── Api
 |  └── ApiCalls.js
 ├── App.css       
@@ -57,3 +59,4 @@ Builds the app for production to the `build` folder.\
    ├── IntegrationTests
    ├── SnapshotTests
    └── UnitTests
+   ```
