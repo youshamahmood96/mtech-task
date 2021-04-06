@@ -40,10 +40,22 @@ Builds the app for production to the `build` folder.\
 ├── Components
 |  ├── Hero
 |  |  ├── Cart
+|  |  |  ├── Cart.css
+|  |  |  ├── Cart.js
+|  |  |  ├── CartSummary.css
+|  |  |  ├── CartSummary.js
+|  |  |  ├── Item.css
+|  |  |  └── Item.js
 |  |  ├── GridLayout
+|  |  |  ├── GridLayout.css
+|  |  |  ├── GridLayout.js
+|  |  |  ├── ItemCard.css
+|  |  |  └── ItemCard.js
 |  |  ├── Hero.css
 |  |  ├── Hero.js
 |  |  └── NavigationBar
+|  |     ├── Navbar.css
+|  |     └── NavBar.js
 |  └── NotFound
 |     └── NotFound.js
 ├── index.css
@@ -74,6 +86,9 @@ Builds the app for production to the `build` folder.\
    ├── IntegrationTests
    ├── SnapshotTests
    |  └── GridLayout
+   |     ├── GridLayout.test.js
+   |     └── __snapshots__
+   |        └── GridLayout.test.js.snap
    └── UnitTests
       └── NotFound.test.js
    ```
