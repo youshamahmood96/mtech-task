@@ -1,25 +1,21 @@
-import React,{ useEffect, useState } from 'react';
+import React from 'react';
 import Loader from 'react-loader-spinner';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 import ItemCard from './ItemCard';
-import { getItems } from '../../../Api/ApiCalls';
 import './GridLayout.css'
+import { LoadItems } from '../../../Api/Queries';
+
+
 
 const GridLayout = () => {
-    const [items, setItems] = useState()
-    useEffect(() => {
-        getItems()
-            .then(res => {
-                setItems(res)
-            })
-    }, [])
+    const {isLoading,data} = LoadItems()
     return (
         <div className="grid-layout" >
             {
-                items ? (
+                !isLoading ? (
                     <div className="wrapper"  >
-                        {items.data.map(item => (<ItemCard key={item.id} item={item} />))}
+                        {data.data.map(item => (<ItemCard key={item.id} item={item} />))}
                     </div>
                 ) : (
                     <Loader className="loader"
