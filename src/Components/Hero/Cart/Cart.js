@@ -1,5 +1,6 @@
 
 import { useDispatch } from 'react-redux';
+
 import { clearCart } from '../../../Redux/Actions/cartActions';
 import { toggleModal } from '../../../Redux/Actions/modalActions';
 import {LoadCart } from '../../../Redux/Helpers/Helpers';

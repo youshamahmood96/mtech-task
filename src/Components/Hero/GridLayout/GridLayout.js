@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React,{ useEffect, useState } from 'react';
 import Loader from 'react-loader-spinner';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
@@ -7,6 +7,7 @@ import { getItems } from '../../../Api/ApiCalls';
 import './GridLayout.css'
 
 const GridLayout = () => {
+    console.log('gridlayout render');
     const [items, setItems] = useState()
     useEffect(() => {
         getItems()
@@ -34,4 +35,4 @@ const GridLayout = () => {
     );
 };
 
-export default GridLayout;
+export default React.memo(GridLayout);

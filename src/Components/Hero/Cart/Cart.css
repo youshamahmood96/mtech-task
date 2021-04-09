@@ -5,6 +5,7 @@ padding: 1rem;
 display: flex;
 align-items: center;
 justify-content: space-between;
+
 }
 
 .modal-header span {
@@ -48,6 +49,7 @@ cursor: pointer;
 }
 @media only screen and (max-width:768px){
     .modal-wrapper {
+        z-index:10;
         position: fixed;
         top:0;
         right:0;
@@ -62,6 +64,7 @@ cursor: pointer;
 }
 @media only screen and (min-width:769px){
     .modal-wrapper {
+        z-index:10;
         position: fixed;
         height:100%;
         overflow-y:scroll;
@@ -70,7 +73,7 @@ cursor: pointer;
         background: #fff;
         width: 50%;
         max-width: 800px;
-        transition: all .5s ease-out;
+        transition: var(--animation);
     }
         
 }
