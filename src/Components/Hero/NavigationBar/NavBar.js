@@ -7,7 +7,6 @@ import { GetTotalLength } from '../../../Redux/Helpers/Helpers';
 import { useDispatch } from 'react-redux';
 import { toggleModal } from '../../../Redux/Actions/modalActions';
 const NavBar = () => {
-    console.log('navbar render');
     const length = GetTotalLength()
     const dispatch = useDispatch()
     const handleModalToggle = () => {

@@ -7,7 +7,6 @@ import './Checkout.css'
 const Checkout = () => {
     const showCheckout = GetCheckOutModalState()
     const history = useHistory()
-    console.log(history);
     const dispatch = useDispatch()
     const handleCheckoutModal = () => {
         dispatch(closeCheckoutModal())

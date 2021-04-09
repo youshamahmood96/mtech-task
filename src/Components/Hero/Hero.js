@@ -12,7 +12,6 @@ import { useDelayUnmount } from '../Helpers/helpers';
 const Hero = () => {
     const show = GetModalState()
     const showDiv = useDelayUnmount(show,2000)
-    console.log(show,showDiv);
     const dispatch = useDispatch()
     const handleModalToggle = () => {
        dispatch(toggleModal())

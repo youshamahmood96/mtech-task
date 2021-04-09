@@ -7,7 +7,6 @@ import { getItems } from '../../../Api/ApiCalls';
 import './GridLayout.css'
 
 const GridLayout = () => {
-    console.log('gridlayout render');
     const [items, setItems] = useState()
     useEffect(() => {
         getItems()
